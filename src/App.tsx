@@ -30,7 +30,7 @@ function App() {
  
  let [OfflineHardQuiz, setOfflineHardQuiz] = useState<quizDataType[]>([]);
 
- const [notificationPerm,setNotificationPerm] = React.useState("");
+//  const [notificationPerm,setNotificationPerm] = React.useState("");
 
 
 //  const messaging = firebase.messaging();
@@ -276,7 +276,7 @@ if (connected === false && homeScreen === true){
   
     <div id = "wrapper">
     <div  className = "formContainer">
-    <p className = "notifications"> {notificationPerm ? 'Notifications: ' + notificationPerm : ""}</p>
+    {/* <p className = "notifications"> {notificationPerm ? 'Notifications: ' + notificationPerm : ""}</p> */}
     <h1 className = "heading">Select Options to generate the quiz</h1>
    
     <h2 id = "note"> Please Connect to internet to enable all the options </h2>
@@ -348,7 +348,7 @@ if (connected === true && homeScreen === true){
     <div id = "wrapper">
     <div  className = "formContainer">
     
-    <p className = "notifications"> {notificationPerm ? 'Notifications: ' + notificationPerm : ""}</p>
+    {/* <p className = "notifications"> {notificationPerm ? 'Notifications: ' + notificationPerm : ""}</p> */}
       <h1 className = "heading">Select Options to generate the quiz</h1>
       
            <div>
